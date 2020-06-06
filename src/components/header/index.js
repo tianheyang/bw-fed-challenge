@@ -29,7 +29,7 @@ const Header = () => (
               <nav id="header" className="navbar navbar-expand-lg navbar-dark">
                 <div className="navbar-controls mr-md-auto">
                   <span className="navbar-brand" href="#home">
-                    <img src="images/abc_logo.svg" alt="Logo" />
+                    <img src="/images/abc_logo.svg" alt="Logo" />
                   </span>
 
                   <ul className="navbar-nav">

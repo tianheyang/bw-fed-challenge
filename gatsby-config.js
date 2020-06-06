@@ -17,5 +17,4 @@ module.exports = {
     },
     `gatsby-transformer-json`
   ],
-  pathPrefix: "/bw-fed-challenge",
 }
