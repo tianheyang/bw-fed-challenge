@@ -17,7 +17,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <style>{`body { background-image: url(/images/backgrounds/${pageData.blocks[0].background}); }`}</style>
+        <style>{`body { background-image: url(images/backgrounds/${pageData.blocks[0].background}); }`}</style>
       </Helmet>
       <div id="headline-container" className="container">
         <div className="row">
