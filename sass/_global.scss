@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+// Arrange header, content, and footer so that they span the full height
+#layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// Fade and slide in content, in sequence, for initial page load
+#header, #headline-container, #cta-container {
+  opacity: 0;
+  transform: translateY(-3em);
+  filter:grayscale(100%);
+}
+
+#header {
+  animation: slide .7s forwards;
+  animation-delay: .2s;
+}
+
+#headline-container {
+  animation: slide .7s forwards;
+  animation-delay: .9s;
+}
+
+#cta-container {
+  animation: slide .7s forwards;
+  animation-delay: 1.6s;
+}
+
+@-webkit-keyframes slide {
+  100% { transform: translateY(0px); opacity: 1; filter:grayscale(0%); }
+}
+
+@keyframes slide {
+  100% { transform: translateY(0px); opacity: 1; filter:grayscale(0%); }
+}

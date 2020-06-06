@@ -1,0 +1,33 @@
+// Bootstrap overrides
+
+// Colors
+$color-primary: #ffc004;
+$body-bg: #232323;
+$body-color: #fff;
+
+// Fonts
+// Prioritizes Roboto over Helvetica Neue for design consistency across platforms since it is a similar typeface in terms of its apertures, x-heights, beaks, etc
+$font-size-base: 0.9375rem;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Buttons
+$enable-rounded: false;
+$input-btn-padding-x: 1.875rem;
+$input-btn-padding-y: .5rem;
+$btn-font-weight: 700;
+
+// Grid & Layout
+$grid-gutter-width: 50px;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1280px,
+  xl: 1550px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1230px,
+  xl: 1490px
+);

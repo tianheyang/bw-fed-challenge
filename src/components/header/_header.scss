@@ -1,0 +1,33 @@
+#header {
+  &.navbar {
+    align-items: start;
+    padding: 1.5625rem 0;
+  }
+  
+  &.navbar-dark .navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: .875rem;
+    line-height: 1.625rem;
+    padding: 0;
+    color: #fff;
+    &.active {
+      color: #ffc004;
+    }
+    &:hover {
+      color: #ffdf80;
+    }
+  }
+
+  .navbar-brand {
+    padding: 0;
+    // Optical alignment to the logo x-height
+    margin-top: -0.5rem;
+    // Optical alignment to the aperture of the "a" in logo
+    margin-left: -0.025rem;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+}
