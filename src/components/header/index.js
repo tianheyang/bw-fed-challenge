@@ -1,7 +1,10 @@
 import React from "react";
 import "./_header.scss";
+import getPrefixedPath from "../../getPrefixedPath";
 
 import { StaticQuery, graphql, Link } from "gatsby";
+
+const logoUrl = getPrefixedPath("/images/abc_logo.svg");
 
 const Header = () => (
   <StaticQuery
@@ -29,7 +32,7 @@ const Header = () => (
               <nav id="header" className="navbar navbar-expand-lg navbar-dark">
                 <div className="navbar-controls mr-md-auto">
                   <span className="navbar-brand" href="#home">
-                    <img src="/images/abc_logo.svg" alt="Logo" />
+                    <img src={logoUrl} alt="Logo" />
                   </span>
 
                   <ul className="navbar-nav">

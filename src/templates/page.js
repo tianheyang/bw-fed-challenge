@@ -4,6 +4,7 @@ import Headline from '../components/headline';
 import Subhead from '../components/subhead';
 import CallToAction from '../components/calltoaction';
 import Layout from '../components/layout';
+import getPrefixedPath from "../getPrefixedPath";
 
 import { graphql } from 'gatsby';
 
@@ -13,11 +14,13 @@ export default ({ data }) => {
   if (!pageData) {
     return null;
   }
+
+  const bgUrl = getPrefixedPath(`/images/backgrounds/${pageData.blocks[0].background}`);
   
   return (
     <Layout>
       <Helmet>
-        <style>{`body { background-image: url(/images/backgrounds/${pageData.blocks[0].background}); }`}</style>
+        <style>{`body { background-image: url(${bgUrl}); }`}</style>
       </Helmet>
       <div id="headline-container" className="container">
         <div className="row">
