@@ -23,7 +23,7 @@
   "devDependencies": {
     "autoprefixer": "^9.4.4",
     "bootstrap": "^4.2.1",
-    "gatsby": "^2.0.115",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-postcss": "^2.0.2",
     "gatsby-plugin-postcss-sass": "^1.0.22",
     "gatsby-plugin-react-helmet": "^3.0.5",
